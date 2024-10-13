@@ -1,0 +1,24 @@
+sudo apt-get install default-jdk scala -y
+scala -version
+wget https://dlcdn.apache.org/spark/spark-3.5.3/spark-3.5.3-bin-hadoop3.tgz
+wget https://downloads.apache.org/spark/spark-3.5.3/spark-3.5.3-bin-hadoop3.tgz.sha512
+tar xvf spark-*.tgz
+sudo mv spark-3.5.3-bin-hadoop3 /opt/spark
+/opt/spark/bin/spark-shell --version
+
+echo "export SPARK_HOME=/opt/spark" >> ~/.bashrc
+echo "export PATH=$PATH:$SPARK_HOME/bin:$SPARK_HOME/sbin" >> ~/.bashrc
+echo "export PYSPARK_PYTHON=/usr/bin/python3" >> ~/.bashrc
+
+source ~/.bashrc
+
+spark-shell
+
+val inputfile = sc.textFile(“input.txt”)
+val counts = inputfile.flatMap(line => line.split(" ")).map(word => (word, 1)).reduceByKey(_+_);
+counts.toDebugString
+counts.cache()
+counts.saveAsTextFile("output")
+
+
+cd output/
