@@ -22,3 +22,4 @@ counts.saveAsTextFile("output")
 
 
 cd output/
+cat part-00000
