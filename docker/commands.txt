@@ -1,0 +1,19 @@
+1. Version and Information
+docker --version : Displays the Docker version.
+docker info : Displays detailed information about Docker.
+2. Image Management
+docker search <image_name> : Searches for specific images on Docker Hub.
+docker images : Lists all Docker images on the local system.
+docker rmi <image_id> : Removes one or more Docker images.
+docker rm images : Removes Docker images.
+3. Network and Volume Management
+docker network ls : Lists available Docker networks.
+docker volume create : Creates a new Docker volume.
+docker volume ls : Lists all Docker volumes.
+4. Container Management
+docker container ps : Lists running containers.
+docker rm <container_id> -f : Removes a container by ID.
+5. System Maintenance
+docker system prune : Removes unused Docker resources.
+Additional Commands
+docker node ls : Lists nodes in a Docker swarm.
