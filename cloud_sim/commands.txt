@@ -1,4 +1,4 @@
-1. Download zip from this, https://github.com/Cloudslab/cloudsim/releases/tag/5.0
+1. Download Source code(zip) from this, https://github.com/Cloudslab/cloudsim/releases/tag/5.0
 2. Download commons-math4-4.0-beta1-src.zip  from 
 https://commons.apache.org/proper/commons-math/download_math.cgi
 3. Create a New Project in Eclipse
