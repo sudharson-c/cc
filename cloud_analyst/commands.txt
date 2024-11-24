@@ -1,2 +1,24 @@
-code- https://sourceforge.net/projects/cloudanalystnetbeans/
-soft - https://netbeans.apache.org/front/main/download/nb17/
+1.Download Cloud Analyst for NetBeans. By clicking the below link you can download cloud
+analyst. Extract the zip file and save the file at a location
+    https://sourceforge.net/projects/cloudanalystnetbeans/
+
+2. Download netbeans from google, https://netbeans.apache.org/front/main/download/
+
+3. Click on the Installer downloaded to start Netbeans installation.
+4. Click next
+5. Select the checkbox and click Next.
+6. Choose the location and click Next.
+7. Click Install.
+8. Installation process starts. It takes few minutes to install.
+9. After the installation process over, click Finish.
+10. Open Apache NetBeans application.
+11. The below window is the Homepage of the Apache NetBeans.
+12. Click File -> Open Project -> Select the location where you have extracted the Cloud
+Analyst Zip file -> click Open Project.
+13. Simply run the project by clicking green colour play button in the top.
+14. Ignore the error message. Click Ok.
+15. It starts to run the cloud analyst. It takes few seconds to open
+16. After the running the cloud analyst, the below screen opens.
+17. Click Configure Simulation -> once the simulation setup is done -> click Done.
+18. Click Run Simulation button.
+19. The below screen which shows the final calculated Avg, Max, Min.
