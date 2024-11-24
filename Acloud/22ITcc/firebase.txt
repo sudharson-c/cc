@@ -1,0 +1,18 @@
+firebase
+go to the new firebase and create a project (student email.id)
+node -v
+npm -v
+npm install -g npm
+npx create-react-app simple (go and keep the react file in simple folder->src->app.js replace)
+cd simple
+npm install -g firebase-tools
+firebase login
+firebase init
+(*)hosting [v->space->enter]
+use an exisiting project -yes
+build
+single page(yes)
+github(no)
+npm run build
+firebase deploy
+hosting URL/domain-url

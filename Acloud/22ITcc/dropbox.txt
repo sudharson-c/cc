@@ -1,0 +1,25 @@
+dropbox
+
+dropbox deverlopers 
+api scope access
+fill dropbox
+name the app
+settings:
+note app key,app secrete key in note pad
+0auth2 http://localhost:3000
+chooser/server ->localhost
+
+
+permission:
+below files and folder, above collobration
+tick/select both write nd read sumbit
+
+goto settingsgenerate access token
+
+goto cmdprompt 
+npm install react-dropbox-chooser
+modify app.js,save
+app.js->all imports-?react user
+user.js->main code->login for crud,dropbox-chooser
+
+npm start

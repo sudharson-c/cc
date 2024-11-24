@@ -1,0 +1,41 @@
+mongodb
+
+mongodb atlas->account
+create cluster
+name cluster
+automatic setup
+preload sample interest
+
+
+aws google cloud (provider)
+mumbai
+create
+
+security tab
+new access
+add ip addresss
+access entry list: 0.0.0.0/0 (allow access from anywhere)
+you can see them "active"
+
+
+database access
+add new db user
+give username ,pwrd ,set
+privilege read and write to any db
+add user
+go to clusters(overview)->database
+connect
+connect to ur application
+cpy conection sts
+
+
+commandprompt:
+mkdir
+cd
+npm init -y
+npm install express mongoose cors
+keep server.js file  in directory
+node server.js
+
+another cmd
+npm start

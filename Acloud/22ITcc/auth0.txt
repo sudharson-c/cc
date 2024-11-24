@@ -1,0 +1,24 @@
+auth0
+login
+new user
+single page app,react,click continue
+then try login -.  SUCCESSFUL CONNECTION
+download sample-continue
+create application (name,react)
+15mins steps - configure -application settings
+give application urls http://localhost:3000 for alll callback logout and web origin
+after updating give save changes
+in command prompt 
+go to directory 
+npm install @auth0/auth0-react
+keep index.js file (change the code src)
+(where wehave mentioned domain.clientID etc)
+index.js edit
+login.js-create
+logout.js-create
+profile.js-create
+user.js-create and keep full logic there(crud)
+app.js -import everythng
+change app.js(react file)accordingly
+
+npm start (you can see your app->login )
