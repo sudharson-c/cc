@@ -1,25 +1,29 @@
-sudo apt-get install default-jdk scala -y
-scala -version
-wget https://dlcdn.apache.org/spark/spark-3.5.3/spark-3.5.3-bin-hadoop3.tgz
-wget https://downloads.apache.org/spark/spark-3.5.3/spark-3.5.3-bin-hadoop3.tgz.sha512
-tar xvf spark-*.tgz
-sudo mv spark-3.5.3-bin-hadoop3 /opt/spark
-/opt/spark/bin/spark-shell --version
+1. Open ubuntu
+2. Open a terminal
+3. sudo apt-get install default-jdk scala -y
+4. scala -version
+5. wget https://dlcdn.apache.org/spark/spark-3.5.3/spark-3.5.3-bin-hadoop3.tgz
+6. wget https://downloads.apache.org/spark/spark-3.5.3/spark-3.5.3-bin-hadoop3.tgz.sha512
+7 .tar xvf spark-*.tgz
+8. sudo mv spark-3.5.3-bin-hadoop3 /opt/spark
+9. /opt/spark/bin/spark-shell --version
 
+10.
 echo "export SPARK_HOME=/opt/spark" >> ~/.bashrc
 echo "export PATH=$PATH:$SPARK_HOME/bin:$SPARK_HOME/sbin" >> ~/.bashrc
 echo "export PYSPARK_PYTHON=/usr/bin/python3" >> ~/.bashrc
 
 source ~/.bashrc
 
+11. 
 spark-shell
+12. In spark shell,
+	val inputfile = sc.textFile(“input.txt”)
+	val counts = inputfile.flatMap(line => line.split(" ")).map(word => (word,1)).reduceByKey(_+_);
+	counts.toDebugString
+	counts.cache()
+	counts.saveAsTextFile("output")
 
-val inputfile = sc.textFile(“input.txt”)
-val counts = inputfile.flatMap(line => line.split(" ")).map(word => (word, 1)).reduceByKey(_+_);
-counts.toDebugString
-counts.cache()
-counts.saveAsTextFile("output")
-
-
-cd output/
-cat part-00000
+13. In new terminal,
+	cd output/
+	cat part-00000
