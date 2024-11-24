@@ -1,0 +1,2 @@
+code- https://sourceforge.net/projects/cloudanalystnetbeans/
+soft - https://netbeans.apache.org/front/main/download/nb17/
