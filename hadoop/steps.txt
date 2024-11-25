@@ -1,3 +1,7 @@
+Installing hadoop:
+1. Open ubuntu
+2. 
+
 Steps to Execute:
 1. Save the code as WordCount.java.
     Compile the Code:
