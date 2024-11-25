@@ -7,6 +7,10 @@ Installing hadoop:
 6. Open http://localhost:9870
 
 Steps to Execute:
+0. If WordCount.java not there,
+	touch WordCount.java
+	open the WordCount.java
+	paste the code in WordCount.java
 1. Save the code as WordCount.java.
     Compile the Code:
         javac -classpath $(hadoop classpath) -d . WordCount.java
