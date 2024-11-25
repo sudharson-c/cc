@@ -22,3 +22,13 @@ docker node ls : Lists nodes in a Docker swarm.
 Start engine:
 	net start com.docker.service
 
+
+Theory:
+Docker is a lightweight and portable way to deploy applications, ensuring consistency across environments. It uses operating system-level virtualization to deliver software in containers.
+
+docker run: Run a container.
+docker build: Build an image.
+docker pull: Download an image.
+docker push: Upload an image.
+docker exec: Execute commands in a container.
+docker logs: View container logs.
