@@ -10,6 +10,9 @@ JAVA_HOME_PATH=$(readlink -f /usr/bin/java | sed "s:/bin/java::")
 echo "Updating package repository..."
 sudo apt update -y
 sudo apt install -y ssh pdsh wget tar
+sudo apt install openssh-server
+sudo systemctl start ssh
+sudo systemctl enable ssh
 
 # Download Hadoop
 echo "Downloading Hadoop $HADOOP_VERSION..."

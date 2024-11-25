@@ -17,3 +17,8 @@ docker rm <container_id> -f : Removes a container by ID.
 docker system prune : Removes unused Docker resources.
 Additional Commands
 docker node ls : Lists nodes in a Docker swarm.
+
+
+Start engine:
+	net start com.docker.service
+

@@ -1,6 +1,10 @@
 Installing hadoop:
-1. Open ubuntu
-2. 
+1. open ubuntu
+2. open terminal
+3. cd <downloaded folder path >
+4. chmod 777 install.sh
+5. bash install.sh
+6. Open http://localhost:9870
 
 Steps to Execute:
 1. Save the code as WordCount.java.
